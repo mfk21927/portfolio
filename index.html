@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muhammad Fahad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">MUHAMMAD <span>FAHAD</span></div>
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <div class="dark-mode-toggle">
+                <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <img src="./images/pic01.jpg" alt="Muhammad Fahad">
+        <p>Hello! I am Muhammad Fahad, a student of BS Computer Science with skills in Front-End Development and Python Development. I love creating dynamic and responsive websites. Welcome to my portfolio!</p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="projects">
+            <div class="project" data-project-id="1">
+                <img src="./images/cal.jpg" alt="Calculator Project">
+                <h3>Calculator</h3>
+                <p>I created a calculator using HTML, CSS, and JavaScript. It performs basic arithmetic operations and has a user-friendly interface.</p>
+            </div>
+            <div class="project" data-project-id="2">
+                <img src="./images/snake.jpg" alt="Snake Game Project">
+                <h3>Snake Game</h3>
+                <p>I made a snake game in Python. The game includes features like increasing speed and length as the snake eats the food.</p>
+            </div>
+            <div class="project" data-project-id="3">
+                <img src="./images/robot.jpg" alt="Face Recognition Project">
+                <h3>Face Recognition</h3>
+                <p>I developed a face recognition system in Python using OpenCV and deep learning. It accurately identifies and verifies faces.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <div>
+                <i class="fas fa-user"></i>
+                <input type="text" name="name" placeholder="Your Name">
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" placeholder="Your Email">
+            </div>
+            <div>
+                <i class="fas fa-comment"></i>
+                <textarea name="message" placeholder="Your Message"></textarea>
+            </div>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>Connect with me on social media!</p>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div id="modal-1" class="modal-project modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Calculator</h2>
+            <p>I created a calculator using HTML, CSS, and JavaScript. It performs basic arithmetic operations and has a user-friendly interface.</p>
+            <img src="calculator-image.jpg" alt="Calculator Project">
+        </div>
+        <div id="modal-2" class="modal-project modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Snake Game</h2>
+            <p>I made a snake game in Python. The game includes features like increasing speed and length as the snake eats the food.</p>
+            <img src="snake-game-image.jpg" alt="Snake Game Project">
+        </div>
+        <div id="modal-3" class="modal-project modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Face Recognition</h2>
+            <p>I developed a face recognition system in Python using OpenCV and deep learning. It accurately identifies and verifies faces.</p>
+            <img src="face-recognition-image.jpg" alt="Face Recognition Project">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1em 0;
+  }
+  .about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+  }
+  
+  .about img:hover {
+    transform: scale(1.2);
+  }
+  
+  
+  
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+  }
+  
+  header .logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Cursive', sans-serif;
+    color: #fff;
+  }
+  
+  header .logo span {
+    color: #fff;
+  }
+  
+  nav {
+    flex: 1;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff6347;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  .dark-mode-toggle {
+    text-align: right;
+  }
+  
+  .dark-mode-toggle button {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark-mode-toggle button:hover {
+    background-color: #ff6347;
+    color: #fff;
+  }
+  
+  section {
+    padding: 2em;
+    text-align: center;
+  }
+  
+  .about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .portfolio .projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio .project {
+    width: 30%;
+    margin: 1em 0;
+    background: white;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .portfolio .project:hover {
+    transform: scale(1.05);
+  }
+  
+  .portfolio img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .contact-form div {
+    position: relative;
+    margin-bottom: 1em;
+  }
+  
+  .contact-form i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: calc(100% - 30px);
+    padding: 0.5em 1em;
+    padding-left: 30px;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #ff6347;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #ff6347;
+  }
+  
+  .dark-mode {
+    background-color: #333;
+    color: white;
+  }
+  
+  .dark-mode header {
+    background-color: #222;
+  }
+  
+  .dark-mode nav a {
+    color: white;
+  }
+  
+  .dark-mode .contact-form input,
+  .dark-mode .contact-form textarea {
+    background-color: #555;
+    border-color: #444;
+    color: white;
+  }
+  
+  .dark-mode .contact-form input[type="submit"] {
+    background-color: #ff6347;
+  }
+  
+  .dark-mode .contact-form input[type="submit"]:hover {
+    background-color: #333;
+  }
+  
+  .dark-mode .portfolio .project {
+    background-color: #444;
+    color: white;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: #333;
+  }
+  
+  .dark-mode .modal-content {
+    background-color: #444;
+    color: white;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio .project {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+    }
+  
+    nav.open {
+      display: flex;
+    }
+  
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .portfolio .project {
+      width: 100%;
+    }
+    
+  }
+  
